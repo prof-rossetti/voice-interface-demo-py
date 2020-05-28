@@ -12,7 +12,7 @@ Demonstrates voice interface capabilities. Uses the `SpeechRecognition` Python p
 Fork this repo under your own control, then clone your copy onto your local computer and navigate there from the command-line:
 
 ```sh
-cd voice-interface-py/
+cd voice-interface-demo-py/
 ```
 
 ## Setup
