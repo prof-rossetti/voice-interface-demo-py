@@ -1,0 +1,3 @@
+
+pyaudio # depends on the lower-level "portaudio" library
+SpeechRecognition
