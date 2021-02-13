@@ -18,6 +18,11 @@ class VoiceService:
     def get_transcript(self, audio, show_all=False):
         return self.client.recognize_google(audio, show_all=show_all)
 
+    def capture_and_transcribe_audio(self):
+        audio = self.capture_audio()
+        #print(type(audio)) #> <class 'speech_recognition.AudioData'>
+        transcript = self.get_transcript(audio, show_all=False)
+        return transcript.upper()
 
 if __name__ == '__main__':
 
@@ -28,10 +33,8 @@ if __name__ == '__main__':
     print("----------------")
     print("HELLO! I AM LISTENING...")
     print("WHEN YOU ARE READY, PLEASE SAY 'ROCK', 'PAPER', OR 'SCISSORS'... ")
-    audio = service.capture_audio()
-    #print(type(audio)) #> <class 'speech_recognition.AudioData'>
-    transcript = service.get_transcript(audio)
-    transcript = transcript.upper()
+
+    transcript = service.capture_and_transcribe_audio()
     print(transcript)
 
     user_choice = None
