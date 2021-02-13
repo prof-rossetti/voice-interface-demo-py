@@ -4,7 +4,7 @@ Demonstrates voice interface capabilities. Uses the `SpeechRecognition` Python p
 
 ## Prerequisites
 
-  + Anaconda, Python 3.7
+  + Anaconda, Python 3.8
   + [portaudio](https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/speech_recognition.md#prerequisites)
 
 ## Installation
@@ -18,7 +18,7 @@ cd voice-interface-demo-py/
 ## Setup
 
 ```sh
-conda create -n interface-capabilities-env python=3.7
+conda create -n interface-capabilities-env python=3.8
 conda activate interface-capabilities-env
 ```
 
@@ -31,11 +31,5 @@ pip install -r requirements.txt
 Recognize speech and respond with print statements:
 
 ```sh
-python interfaces/voice.py
-```
-
-Recognize speech, and respond with voice output (Mac only):
-
-```sh
-python interfaces/voice_mac.py
+python app/voice_demo.py
 ```
