@@ -1,4 +1,4 @@
-# Voice Interface Capabilities Demo (Python)
+# Voice Interface Demo (Python)
 
 Demonstrates voice interface capabilities. Uses the `SpeechRecognition` Python package to convert speech to text.
 
@@ -31,5 +31,5 @@ pip install -r requirements.txt
 Recognize speech and respond with print statements:
 
 ```sh
-python app/voice_demo.py
+python app/demo.py
 ```
