@@ -1,11 +1,14 @@
 # Voice Interface Demo (Python)
 
-Demonstrates voice interface capabilities. Uses the `SpeechRecognition` Python package to convert speech to text.
+Demonstrates voice interface capabilities. Uses the "SpeechRecognition" Python package to convert speech to text.
 
 ## Prerequisites
 
-  + Anaconda, Python 3.8
-  + [portaudio](https://github.com/prof-rossetti/intro-to-python/blob/master/notes/python/packages/speech_recognition.md#prerequisites)
+The "SpeechRecognition" package depends on the lower-level "portaudio" library. To install "portaudio": 
+
+  + On a Mac, use homebrew (`brew install portaudio`). 
+  + On Windows, use pipwin within an active virtual environment (see installation steps below).
+
 
 ## Installation
 
@@ -17,14 +20,27 @@ cd voice-interface-demo-py/
 
 ## Setup
 
+Create and activate a virtual environment:
+
 ```sh
-conda create -n interface-capabilities-env python=3.8
-conda activate interface-capabilities-env
+conda create -n voice-env python=3.8
+conda activate voice-env
 ```
+
+Windows only:
+
+```sh
+pip install pipwin
+pipwin install pyaudio
+```
+
+Install package dependencies:
 
 ```sh
 pip install -r requirements.txt
 ```
+
+
 
 ## Usage
 
