@@ -4,7 +4,7 @@ Demonstrates voice interface capabilities. Uses the "SpeechRecognition" Python p
 
 ## Prerequisites
 
-The "SpeechRecognition" package depends on the lower-level "portaudio" library. To install "portaudio": 
+The "SpeechRecognition" package depends on the "pyaudio" Python package, which in turn depends on the lower-level "portaudio" library. To install "portaudio": 
 
   + On a Mac, use homebrew (`brew install portaudio`). 
   + On Windows, use pipwin within an active virtual environment (see installation steps below).
