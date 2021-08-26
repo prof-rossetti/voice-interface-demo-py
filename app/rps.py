@@ -58,4 +58,31 @@ if __name__ == '__main__':
 
     print("----------------")
     print("THE WINNER IS...")
-    print("[TODO]")
+    user_choice = user_choice.lower()
+    computer_choice = computer_choice.lower()
+    winners = {
+        "rock":{
+            "rock": None, # represents a tie
+            "paper": "paper",
+            "scissors": "rock",
+        },
+        "paper":{
+            "rock": "paper",
+            "paper": None, # represents a tie
+            "scissors": "scissors",
+        },
+        "scissors":{
+            "rock": "rock",
+            "paper": "scissors",
+            "scissors": None, # represents a tie
+        },
+    }
+
+    winning_choice = winners[user_choice][computer_choice]
+
+    if winning_choice == user_choice:
+        print("Oh, you won! Nice job.".upper())
+    elif winning_choice == computer_choice:
+        print("Oh, the computer won. It's ok.".upper())
+    elif winning_choice is None:
+        print("Oh, it's a tie.".upper())

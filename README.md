@@ -18,8 +18,8 @@ cd voice-interface-demo-py/
 ## Setup
 
 ```sh
-conda create -n interface-capabilities-env python=3.8
-conda activate interface-capabilities-env
+conda create -n voice-38 python=3.8
+conda activate voice-38
 ```
 
 ```sh
